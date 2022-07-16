@@ -9,7 +9,9 @@ const app = express();
 dotenv.config()
 app.use(express.json())
 app.use(cors())
+app.use(express.static('./frontend/build'));
 app.use('/v1/devjobs/jobs', jobsRoutes)
+
 
 const PORT = process.env.PORT || 4000
 

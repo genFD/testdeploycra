@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-const API_URL = '/v1/devjobs/jobs'
+// const API_URL = '/v1/devjobs/jobs'
+const API_URL = 'https://testdeploycra.herokuapp.com/v1/devjobs/jobs'
 
 function Home() {
 const [jobs, setJobs] = useState([])
