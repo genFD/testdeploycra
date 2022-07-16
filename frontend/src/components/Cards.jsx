@@ -17,7 +17,7 @@ const Cards = () => {
     <Transition
       appear
       show={results.length > 0}
-      as={Fragment}
+      as='div'
       enter="ease-out duration-300"
       enterFrom="opacity-0 scale-95"
       enterTo="opacity-100 scale-100"
