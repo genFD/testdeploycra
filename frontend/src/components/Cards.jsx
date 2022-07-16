@@ -1,6 +1,6 @@
 import React from 'react';
 import { Transition } from '@headlessui/react';
-import { Div } from 'react';
+import { Fragment } from 'react';
 import { Card } from '../components';
 import { Loading, NoResults } from '../components';
 import { useGlobalContext } from '../context/context.jsx';
@@ -17,7 +17,7 @@ const Cards = () => {
     <Transition
       appear
       show={results.length > 0}
-      as={Div}
+      as={Fragment}
       enter="ease-out duration-300"
       enterFrom="opacity-0 scale-95"
       enterTo="opacity-100 scale-100"

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Transition } from '@headlessui/react';
-import { Div } from 'react';
+import { Fragment } from 'react';
 import { JobInfo, Navbar, Loading, NoResults } from '../components';
 import { useParams } from 'react-router-dom';
 import { useGlobalContext } from '../context/context.jsx';
@@ -20,7 +20,7 @@ function Detail() {
       <Transition
         appear
         show={!loading}
-        as={Div}
+        as={Fragment}
         enter="ease-out duration-300"
         enterFrom="opacity-0 scale-95"
         enterTo="opacity-100 scale-100"
