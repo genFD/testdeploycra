@@ -8,7 +8,7 @@ const pool = new Pool({
     rejectUnauthorized: false, // don't check for SSL cert
   },
 });
-
+console.log(process.env.DATABASE_URL);
 module.exports = {
   query: (query) => pool.query(query),
 };
