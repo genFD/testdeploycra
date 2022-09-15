@@ -32,7 +32,7 @@ const Card = ({
         </header>
 
         {/* 2-------- position  */}
-        <Link to={`/detail/${id}`}>
+        <Link to={`/${id}`}>
           <h2 className="text-very-dark-blue hover:text-6E8098 dark:hover:text-6E8098 transition-colors duration-200 cursor-pointer dark:text-white text-heading-3 font-bold">
             {position}
           </h2>
