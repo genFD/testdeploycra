@@ -29,7 +29,7 @@ const CardContent = ({
 
         <div className="mt-54 tablet:mt-0 tablet:w-141">
           <button className="w-full h-48 bg-violet rounded-md grid place-items-center font-bold text-white text-body transition-colors duration-200 cursor-pointer hover:bg-light-violet ">
-            Apply now
+            Apply
           </button>
         </div>
       </div>
